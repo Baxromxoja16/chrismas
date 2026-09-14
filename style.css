@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #181C29;
+
+    --primary-10: #FF46461A;
+    --primary: #FF4646;
+    --white: white;
+}
+
+.container {
+    width: 1276px;
+    margin: auto;
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+nav .navbar .logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+nav .navbar .logo span {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    color: var(--dark-color);
+}
+
+nav .navbar .nav-menu {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+}
+
+nav .navbar .nav-menu a {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+
+    padding: 12px 20px;
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+nav .navbar .nav-menu a:hover {
+    border-radius: 12px;
+    background: var(--primary-10);
+    color: var(--primary);
+}
+
+main {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--primary);
+}
+/* ======================= header start */
+header {
+    position: relative;
+    background: url(./imgs/orqafon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header .hero{
+    width: 430px;
+    margin: auto;
+    padding: 120px 0;
+}
+
+header .hero p {
+    font-family: Allura;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+header .hero h1 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: 18%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+header .hero .btn-explore {
+    font-family: Montserrat;
+    font-weight: 600;   
+    font-style: SemiBold;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white);
+    padding: 20px 32px;
+    
+    background-color: var(--dark-color);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 12px;
+    display: block;
+    border: none;
+}
+
+header .bg-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* ======================= header end */
