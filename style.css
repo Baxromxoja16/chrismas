@@ -77,10 +77,18 @@ main {
 }
 /* ======================= header start */
 header {
-    position: relative;
-    background: url(./imgs/orqafon.png);
+    background-image: url(./imgs/bg-ball.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-position: top center; /* Rasmni tepa markazga taqash */
+    background-size: contain; /* Yoki belgilangan piksellarda: 1440px auto */
+    position: relative;
+}
+.bg-snow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 header .hero{
     width: 430px;
