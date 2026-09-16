@@ -217,3 +217,91 @@ header .bg-header {
 .about .about-card .item-right img {
     width: 100%;
 }
+
+/* about end */
+
+/* slider start */
+.slider {
+    position: relative;
+    padding: 60px 0;
+    padding-bottom: 136px;
+}
+
+.slider .slider-title {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.slider .slider-title span {
+    font-family: Allura;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+
+    color: var(--white);
+}
+.slider .slider-title h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+.slider .slide {
+    padding-left: calc((100vw - 1276px) / 2);
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slider .slide .slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider .slide .slider-wrapper .slider-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider .slide .slider-wrapper .slider-item p {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+.slider .control-buttons {
+    position: absolute;
+    right: calc((100vw - 1276px) / 2);
+    bottom: 60px;
+    gap: 20px;
+    display: flex;
+}
+
+.slider .control-buttons .slider-button {
+    border-radius: 23px;
+    border: 1px solid var(--white);
+    padding: 16px;
+    background: transparent;
+    cursor: pointer;
+}
