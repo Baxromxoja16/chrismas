@@ -148,3 +148,72 @@ header .bg-header {
     left: 0;
 }
 /* ======================= header end */
+
+/* ====================== about start */
+.about {
+    position: relative;
+}
+.item-left {
+    display: flex;
+}
+
+.about .about-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding-left: 60px;
+}
+
+.about .about-card .item-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 60px 0;
+    max-width: 426px;
+}
+
+.about .about-card .item-left .sub-title {
+    font-family: Allura;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 5%;
+
+    color: var(--primary);
+
+}
+
+.about .about-card .item-left h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-transform: uppercase;
+
+    color: var(--dark-color);
+}
+
+.about .about-card .item-left p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 148%;
+    letter-spacing: 0%;
+
+    color: var(--dark-color);
+}
+
+.about .about-card .item-right {
+    width: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.about .about-card .item-right img {
+    width: 100%;
+}
