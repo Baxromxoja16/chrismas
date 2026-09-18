@@ -10,11 +10,27 @@
     --primary-10: #FF46461A;
     --primary: #FF4646;
     --white: white;
+    --content-bg: #ECF3F8;
+    --tag-purple: #4361FF;
 }
 
 .container {
     width: 1276px;
     margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.sub-title {
+    font-family: Allura;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-align: center;
+
+    color: var(--white);
 }
 
 nav .navbar {
@@ -96,18 +112,6 @@ header .hero{
     padding: 120px 0;
 }
 
-header .hero p {
-    font-family: Allura;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 5%;
-    text-align: center;
-    color: var(--white);
-    margin-bottom: 12px;
-}
-
 header .hero h1 {
     font-family: Montserrat;
     font-weight: 600;
@@ -175,15 +179,8 @@ header .bg-header {
 }
 
 .about .about-card .item-left .sub-title {
-    font-family: Allura;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 5%;
-
     color: var(--primary);
-
+    text-align: left;
 }
 
 .about .about-card .item-left h2 {
@@ -304,4 +301,84 @@ header .bg-header {
     padding: 16px;
     background: transparent;
     cursor: pointer;
+}
+
+/* ============= slider end  */
+
+/* =============== gifts start */
+.gifts {
+    position: relative;
+    padding: 60px 0;
+}
+
+.gifts .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.gifts .title h2 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 16%;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+
+.gifts .card-wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.gifts .card-wrapper .card {
+    border-radius: 20px;
+    width: 310px;
+    overflow: hidden;
+    background-color: var(--content-bg);
+}
+
+.gifts .card-wrapper .card .card-img img {
+    width: 100%;
+}
+
+.gifts .card-wrapper .card .card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 8px;
+    border-radius: 20px;
+    background-color: var(--white);
+    height: 100%;
+}
+
+.gifts .card-wrapper .card .card-info span {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+
+    color: var(--tag-purple);
+}
+
+.gifts .card-wrapper .card .card-info h3 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 16px;
+    line-height: 152%;
+    letter-spacing: 8%;
+    text-transform: uppercase;
+
+    color: var(--dark-color);
 }
