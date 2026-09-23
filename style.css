@@ -66,6 +66,13 @@ nav .navbar .nav-menu {
     list-style: none;
 }
 
+nav .navbar .menu-toggle {
+    border: none;
+    background: none;
+    height: 40px;
+    display: none;
+}
+
 nav .navbar .nav-menu a {
     font-family: Montserrat;
     font-weight: 600;
@@ -594,3 +601,95 @@ footer .footer-bottom .made-in:hover {
     cursor: pointer;
 }
 /* =============== footer end */
+
+
+
+
+
+/* ======================= MEDIA QUERY ======================*/
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        max-width: 752px;
+        padding: 0 8px;
+    }
+
+    nav .navbar .nav-menu {
+        display: none;
+    }
+
+    nav .navbar .menu-toggle {
+        display: block;
+    }
+
+    .about .about-card {
+        align-items: stretch;
+    }
+
+    .about .about-card .item-left {
+        padding: 106px 0;
+        max-width: 256px;
+    }
+
+    .about .about-card .item-right img{
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slider {
+        padding: 120px 0;
+    } 
+
+    .slider .control-buttons {
+        right: 8px;
+    }
+
+    .gifts .card-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cta {
+        padding: 180px 0;
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    footer .footer-cards {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        max-width: 100%;
+    }
+
+    header{ 
+        background-size: 300% auto;
+        background-position: top center;
+    }
+
+    header .hero {
+        width: 364px;
+    }
+
+    .about .about-card {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .about .about-card .item-left {
+        padding: 60px 20px;
+        width: 100%;
+    }
+
+    .about .about-card .item-right{
+        width: 100%;
+    }
+
+    .slider .control-buttons {
+        bottom: 30px;
+    }
+}
